@@ -1,11 +1,12 @@
-import Link from "next/link";
+"use client";
 
-export default function Home() {
+import Notes from "@/components/Notes";
+
+export default function NotesPage() {
   return (
     <>
       <main className="flex min-h-screen flex-col items-center justify-between p-24">
-        Notes App
-        <Link href="/notes"> Notes</Link>
+        <Notes />
       </main>
     </>
   );
